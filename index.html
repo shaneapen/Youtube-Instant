@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ABCDEFG18</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- age restricted video - https://www.youtube.com/watch?v=ZIM1HydF9UA -->
+<!-- FAQ : http://codepen.io/blazicke/pen/pbxpga?editors=1100 
+http://keepvid.com/?url=https://youtu.be/34Na4j8AVgA -->
+<div class="top_bar">
+   <a href="#"><img class="logo" height=50px src="http://codegena.com/wp-content/uploads/2017/03/ytlogo2.png" title="Youtube18 - Search as you type." /> </a>
+   <input class="url_box" type="text" id="ytUrl" placeholder="Search or enter URL here" onkeyup="youtube_parser();">
+   <button onclick="reset()">Close</button>
+
+   <div class="container">
+      <div id="relatedVideos">
+         <!-- Related videos -->
+      </div>
+   </div>
+</div>
+<noscript style="text-align:center;color:white;">
+   <h2>Please enable javascript for this site.</h2>
+   </noscript>
+
+<div class="codegena" id="player">
+   <iframe src="http://youtube.com/embed/demo" frameborder="0" id="ytPlayer" allowfullscreen></iframe>
+
+</div>
+
+<!-- Ad Slot + download button -->
+<div class="container" style="min-height:50px;">
+   <div class="functionBar">
+      <button onclick="downloadVideo()" id="downloadButton">Download Video</button>
+      <button onclick="createGif()" id="gifs">Create GIF</button>
+   </div>
+</div>
+
+
+<!-- F A Q -->
+<div class="container">
+
+   <div class="content">
+      <h2>What is Youtube Instant?</h2>
+      <p>Youtube Instant is a website that allows you to quickly search and play youtube videos. The player loads the required video instantly. The site also has integrations with Keepvid to download videos and with gifs to create gifs from youtube video.<br/>         Some of the other features of this site include youtube age restriction bypass, enable PIP(Picture in Picture) mode in iOS, dark UI for better video playback, responsive site to fit to your screen size, related videos, etc.</p>
+
+      <!-- seperator -->
+      <h2>Do we collect your usage data?</h2>
+      <p>NO! We don't collect any of your usage data!</p>
+
+      <!-- seperator -->
+      <h2>How can you request features?</h2>
+      <p>If you have some ideas and suggestions for this site, share it with me at shaneapen@codegena.com</p>
+
+   </div>
+
+</div>
+
+<footer>
+   <p>Made with <span style="color:red;font-size:20px;">♥</span> by <a href="http://codegena.com" target="_blank">Codegena</a></p>
+</footer>
+  <script src='http://apis.google.com/js/client.js?onload=handleAPILoaded'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
